@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int gan(void);
+
+int main(void){
+	
+    printf("2+4+6+~+100:%d\n", gan()); 
+    
+
+    system("pause");
+
+    return 0;
+}
+int gan(void){
+
+    static int niang=0;
+    
+    int ya;
+
+    for(ya=2;ya<=100;ya+=2){
+        niang+=ya;
+    }
+    return niang;
+}
